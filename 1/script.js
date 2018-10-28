@@ -25,18 +25,6 @@ const createBoxes = function(count, canvasWidth, canvasHeight){
                 ctx.fillRect(this.x, this.y, this.width, this.height);
             },
             update: function(){
-                // if(this.x < 0 || this.x > canvasWidth - this.width){
-                //     this.xDelta *= (-1);
-                //     this.color = colorArray[rand(colorArray.length) - 1];
-                // }
-                // if(this.y < 0 || this.y > canvasHeight - this.height){
-                //     this.yDelta *= (-1);
-                //     this.color = colorArray[rand(colorArray.length) - 1];
-                // }
-                
-                // this.x += this.xDelta;
-                // this.y += this.yDelta;
-
             }
         }
     }  
@@ -49,14 +37,3 @@ for(let  i = 0; i < boxes.length; i++){
     boxes[i].draw();
 }
 
-// const loop = function(){
-//     ctx.fillStyle = "coral";
-//     ctx.fillRect(0,0,canvas.width, canvas.height);
-//     for(let  i = 0; i < boxes.length; i++){
-//         boxes[i].update();
-//         boxes[i].draw();
-//     }
-//     requestAnimationFrame(loop);
-// }
-
-// loop();
